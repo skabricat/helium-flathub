@@ -57,4 +57,3 @@ for proot in "etc/chromium/policies" "etc/static/chromium/policies"; do
 done
 
 exec zypak-wrapper /app/lib/helium/helium.real --class=net.imput.helium "$@" --no-default-browser-check
-
