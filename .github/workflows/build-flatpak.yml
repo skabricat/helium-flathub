@@ -1,4 +1,4 @@
-name: Build and Publish Flatpak
+name: Build testing Flatpak
 
 on:
   #  workflow_run:
@@ -45,10 +45,3 @@ jobs:
         run: |
           flatpak-builder --repo=repo build-dir net.imput.helium.yml
 
-      - name: Upload repo to gh-pages
-        if: github.event_name == 'workflow_dispatch' || steps.check_commits.outputs.recent_commit == 'true'
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: repo
