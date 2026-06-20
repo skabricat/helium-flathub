@@ -11,6 +11,7 @@ x-annotations:
   org.flatpak.metadata.description: |
     Helium is a lightweight, privacy-focused browser built upon Ungoogled Chromium.
     This Flatpak package uses the prebuilt binary provided by the Helium Linux project.
+    Community package, not affiliated with Helium developers.
   org.flatpak.metadata.license: "GPL-3.0-or-later"
   org.flatpak.metadata.homepage: "https://github.com/imputnet/helium-linux"
 
